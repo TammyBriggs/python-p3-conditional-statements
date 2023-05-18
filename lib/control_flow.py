@@ -1,44 +1,48 @@
 #!/usr/bin/env python3
 
 def admin_login(username, password):
-    if username == "ADMIN" or username == "admin" and password == "12345":
-        print("Access granted")
+    if (username == "ADMIN" or username == "admin") and password == "12345":
+        return "Access granted"
     else:
-        print("Access denied")
+        return "Access denied"
     pass
 
 def hows_the_weather(temperature):
     if temperature < 40:
-        print("It's brisk out there!")
+        return "It's brisk out there!"
     elif temperature >= 40 and temperature <= 65:
-        print("It's a little chilly out there!")
+        return "It's a little chilly out there!"
     elif temperature > 85:
-        print("It's too dang hot out there!")
+        return "It's too dang hot out there!"
     else:
-        print("It's perfect out there!")
+        return "It's perfect out there!"
     pass
 
 def fizzbuzz(num):
     if num % 3 == 0 and num % 5 == 0:
-        print("FizzBuzz")
+        return "FizzBuzz"
     elif num % 3 == 0:
-        print("Fizz")
+        return "Fizz"
     elif num % 5 == 0:
-        print("Buzz")
+        return "Buzz"
     else:
-        print(num)
+        return num
     pass
 
 def calculator(operation, num1, num2):
     if operation == "+":
-        print(num1 + num2)
+        final_value = num1 + num2
+        return final_value
     elif operation == "-":
-        print(num1 - num2)
+        final_value = num1 - num2
+        return final_value
     elif operation == "*":
-        print(num1 * num2)
+        final_value = num1 * num2
+        return final_value
     elif operation == "/":
-        print(num1 / num2)
+        final_value = num1 / num2
+        return final_value
     else:
         print("Invalid operation!")
-        print(None)
+        return None
     pass
